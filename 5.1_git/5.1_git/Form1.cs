@@ -26,8 +26,8 @@ namespace _5._1_git
             String miAlumnoStr;
 
             miAlumno.Nombre = aluNombre.Text;
-            miAlumno.Nota = Convert.ToInt32(aluNota.Text);
-            miAlumnoStr = aluNombre.Text + " " + aluNota.Text + (miAlumno.Aprobado ? " Aprobado" : " Suspenso") + "\n";
+            miAlumno.Nota = Convert.ToInt32(numericUpDown1.Text);
+            miAlumnoStr = aluNombre.Text + " " + numericUpDown1.Text + (miAlumno.Aprobado ? " Aprobado" : " Suspenso") + "\n";
             listaAlumnos.AppendText(miAlumnoStr);
             misAlumnos.Agregar(miAlumno);
         }
